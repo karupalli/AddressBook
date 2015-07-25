@@ -19,7 +19,7 @@ public class PersonTest {
 	}
 
 	@Test
-	public void testThreeDaysAge() {
+	public void test245DaysAge() {
 		
 		Person person = new Person("Bob Bobber", Gender.MALE, LocalDate.now().plusDays(245) );
 		assertEquals(245,person.getAgeInDays());

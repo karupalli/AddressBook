@@ -22,6 +22,7 @@ public class AddressBookTest extends TestCase {
 		assertEquals(3, addressBook.getAllMales().size());
 	}
 	
+	
 	@Test
 	public void testMalesCountWIthEmptyList()
 	{
