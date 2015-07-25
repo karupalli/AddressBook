@@ -1,6 +1,7 @@
 package com.gumtree.addressbook.model;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 /**
  * Class to represent Person object
@@ -11,7 +12,7 @@ public class Person {
 
 	private String name;
 	private Gender gender;
-	private Date dob;
+	private LocalDate dob;
 	
 	public String getName() {
 		return name;
@@ -25,11 +26,20 @@ public class Person {
 	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
-	public Date getDob() {
+	public LocalDate getDob() {
 		return dob;
 	}
-	public void setDob(Date dob) {
+	public void setDob(LocalDate dob) {
 		this.dob = dob;
+	}
+	
+	/**
+	 * Returns age in days
+	 * @return
+	 */
+	public long getAge()
+	{
+		return ChronoUnit.DAYS.between(LocalDate.now(), dob);
 	}
 	
 	
