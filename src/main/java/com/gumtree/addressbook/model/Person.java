@@ -1,6 +1,7 @@
 package com.gumtree.addressbook.model;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 /**
@@ -13,6 +14,19 @@ public class Person {
 	private String name;
 	private Gender gender;
 	private LocalDate dob;
+	
+	public Person()
+	{
+		//default
+	}
+	
+	public Person(String name, Gender gender, String dobString)
+	{
+		this.name=name;
+		this.gender=gender;
+		this.dob=LocalDate.parse(dobString.trim(),
+				DateTimeFormatter.ofPattern("dd/MM/yy"));
+	}
 	
 	public String getName() {
 		return name;

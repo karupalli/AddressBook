@@ -30,6 +30,9 @@ public class AddressBook {
 	 */
 	public Person getOldest()
 	{
+		if(personList.isEmpty())
+			return null;
+		
 		personList.sort(Comparator.comparing(p->p.getAge()));
 		return personList.get(0);
 	}

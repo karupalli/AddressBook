@@ -30,6 +30,7 @@ public class AddressApp
 			//How much older Bull is than Paul
 			Person bill = addressBook.getPersonByName("Bill McKnight");
 			Person paul = addressBook.getPersonByName("Paul Robinson");
+			
 			if(bill != null && paul != null)
 				System.out.println("Bill is "+ ChronoUnit.DAYS.between(bill.getDob(),paul.getDob()) + " days older than Paul");
 			
