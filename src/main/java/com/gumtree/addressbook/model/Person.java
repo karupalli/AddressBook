@@ -20,6 +20,13 @@ public class Person {
 		//default
 	}
 	
+	public Person(String name, Gender gender, LocalDate dob)
+	{
+		this.name=name;
+		this.gender=gender;
+		this.dob=dob;
+	}
+	
 	public Person(String name, Gender gender, String dobString)
 	{
 		this.name=name;
@@ -51,7 +58,7 @@ public class Person {
 	 * Returns age in days
 	 * @return
 	 */
-	public long getAge()
+	public long getAgeInDays()
 	{
 		return ChronoUnit.DAYS.between(LocalDate.now(), dob);
 	}

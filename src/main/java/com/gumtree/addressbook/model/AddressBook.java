@@ -33,7 +33,7 @@ public class AddressBook {
 		if(personList.isEmpty())
 			return null;
 		
-		personList.sort(Comparator.comparing(p->p.getAge()));
+		personList.sort(Comparator.comparing(p->p.getAgeInDays()));
 		return personList.get(0);
 	}
 	

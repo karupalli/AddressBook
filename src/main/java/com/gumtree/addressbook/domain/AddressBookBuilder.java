@@ -29,6 +29,12 @@ public class AddressBookBuilder {
 	public AddressBook buildAddressBook(String fileName)
 			throws WrongFileFormatException {
 		
+		if(fileName == null)
+		{
+			throw new WrongFileFormatException();
+		}
+		
+		
 		AddressBook addressBook = new AddressBook();
 		Stream<String> lines = null;
 
