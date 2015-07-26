@@ -6,7 +6,7 @@ This is code for Address Book which solves three problems
   3. How many days older is Bill than Paul?
 
 
-3 Junit test cases to added for testing
+Three Junit test cases to added for unit testing
 1. Person.java
 2. AddressBook.java
 3. AddressBookBuilder.java
