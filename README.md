@@ -7,6 +7,6 @@ This is code for Address Book which solves three problems
 
 
 Three Junit test cases to added for unit testing
-1. Person.java
-2. AddressBook.java
-3. AddressBookBuilder.java
+1. PersonTest.java
+2. AddressBookTest.java
+3. AddressBookBuilderTest.java
